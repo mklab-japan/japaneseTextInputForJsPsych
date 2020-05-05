@@ -9,7 +9,7 @@
 ひらがな/カタカナ入力用のライブラリとしてWanaKana.jsを利用しているので，以下のURLからWanaKana.min.jsを入手してください（Downloadを右クリックして保存）。    
 https://wanakana.com/    
 
-次にjspsych-html-keyboard-japaneseTextInput.jsとjspsych_mk.cssをダウンロードしてください。CCSとして<head></head>内でjspsych_mk.cssを指定します（入力欄の書式設定などに必要です）。
+次に，<head></head>内でjspsych_mk.cssを指定します（入力欄の書式設定などに必要です）。
 ``` html
 <link rel='stylesheet', type='text/css', href='jspsych_mk.css'>
 ```

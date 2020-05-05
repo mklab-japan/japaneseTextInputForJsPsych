@@ -78,6 +78,7 @@ const trial = {
 
 # デモ
 ## ひらがな入力のデモ
+https://mklab-japan.github.io/japaneseTextInputForJsPsych/hiraganaDemo.html
 
 ## カタカナ入力のデモ
-
+https://mklab-japan.github.io/japaneseTextInputForJsPsych/katakanaDemo.html

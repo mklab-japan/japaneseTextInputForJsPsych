@@ -11,9 +11,12 @@ const fixation = {
 
 
 //刺激
-const cueList = [
-    {cue: '果物 - り＿＿？'},
-    {cue: '果物 - み＿＿？'}
+const cueList = [{
+        cue: '果物 - り＿＿？'
+    },
+    {
+        cue: '果物 - み＿＿？'
+    }
 ];
 
 const trialDuration = 10 * displayTime;
@@ -49,7 +52,7 @@ const readyText = {
 };
 
 //構成
-let timeline = [readyText,phase];
+let timeline = [readyText, phase];
 jsPsych.init({
     timeline: timeline,
     on_finish: function () {

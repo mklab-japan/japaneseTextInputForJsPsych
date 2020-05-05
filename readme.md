@@ -8,22 +8,22 @@
 ひらがな/カタカナ入力用のライブラリとしてWanaKana.jsを利用しているので，以下のURLからWanaKana.min.jsを入手してください（Downloadを右クリックして保存）。    
 https://wanakana.com/    
 
-次にjspsych-html-keyboard-japaneseTextInput.jsとjspsych_mk.cssをダウンロードしてください。CCSをとして<head></head>内でjspsych_mk.cssを指定します。
-```
-<link rel='stylesheet' ,type='text/css' , href='jspsych_mk.css'>
+次にjspsych-html-keyboard-japaneseTextInput.jsとjspsych_mk.cssをダウンロードしてください。CCSとして<head></head>内でjspsych_mk.cssを指定します（入力欄の書式設定などに必要です）。
+``` html
+<link rel='stylesheet', type='text/css', href='jspsych_mk.css'>
 ```
 
-そして，以下のようにjsPsychのプラグインとして読み込んでください。spsych-html-keyboard-japaneseTextInput.jsより先にWanaKana.min.jsを読み込む必要があります。
+そして，<body>以下でwakanaka.min.jsとjspsych-html-keyboard-japaneseTextInput.jsをjsPsychのプラグインとして読み込んでください。jspsych-html-keyboard-japaneseTextInput.jsより先にwanakana.min.jsを読み込む必要があります。
 
-```
+``` html
 <script src="wanakana.min.js"></script>
 <script src="jspsych-html-keyboard-japaneseTextInput.js"></script>
 ```
 
-なお，長音記号（ー）の入力を有効にしたい場合は，jspsych.jsの一部に加筆にする必要があります。jspsych-6.10.jsの場合，2219行目を以下のように加筆してください。
+なお，長音記号（ー）の入力を有効にしたい場合は，jspsych.jsの一部に加筆にする必要があります。jspsych-6.10.jsの場合，2219行目付近を以下のように加筆してください。
 
 ## 変更前
-```
+``` 
     ',': 188,
     '.': 190,
 ```
@@ -35,14 +35,13 @@ https://wanakana.com/
     '.': 190,
 ```
 
-
 # 使用方法
-typeとしてjspsych-html-keyboard-japaneseTextInputを指定して使用してください。以下のパラメータを設定できます。
+typeとしてjspsych-html-keyboard-japaneseTextInputを指定してしてください。以下のパラメータを設定できます。
 
  * stimulus : 画面中央に出す文字列（html）
  * inputSystem : ひらがなとカタカナのどちらに変換するか
-  * 'hiragana'→ひらがな
-  * 'katakana'→カタカナ
+    * 'hiragana'→ひらがな
+    * 'katakana'→カタカナ
 * convertText : デフォルトで表示する文字列（html）を指定する場合は入力（デフォルトは点滅するカーソル）
 * prompt：教示など（デフォルトはnull）
 * stimulus_duration：刺激の呈示時間（ms）（デフォルトはnull）

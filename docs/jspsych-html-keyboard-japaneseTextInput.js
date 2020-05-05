@@ -137,21 +137,26 @@ jsPsych.plugins["html-keyboard-japaneseTextInput"] = (function () {
             keyCharacter = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(response.key)
             if (keyCharacter == 'enter' && trial.enter_ends_trial == true) {
                 end_trial();
-            }
-            else if (keyCharacter == 'backspace' | keyCharacter == 'delete') {
+            } else if (keyCharacter == 'backspace' | keyCharacter == 'delete') {
                 romanResponse = romanResponse.slice(0, -1);
-            }
-            else if (keyCharacter.length == 1) {
+            } else if (keyCharacter.length == 1) {
                 romanResponse += keyCharacter;
-            } 
-
-            if(trial.inputSystem == 'hiragana')
-            {
-                trial.convertText = wanakana.toHiragana(romanResponse, {customKanaMapping: { n: 'n', nn: 'ん'}});
             }
-            else if(trial.inputSystem == 'katakana')
-            {
-                trial.convertText = wanakana.toKatakana(romanResponse, {customKanaMapping: { n: 'n', nn: 'ン'}});
+
+            if (trial.inputSystem == 'hiragana') {
+                trial.convertText = wanakana.toHiragana(romanResponse, {
+                    customKanaMapping: {
+                        n: 'n',
+                        nn: 'ん'
+                    }
+                });
+            } else if (trial.inputSystem == 'katakana') {
+                trial.convertText = wanakana.toKatakana(romanResponse, {
+                    customKanaMapping: {
+                        n: 'n',
+                        nn: 'ン'
+                    }
+                });
             }
             update_trial();
         };

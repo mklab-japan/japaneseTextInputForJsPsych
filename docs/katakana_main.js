@@ -16,7 +16,7 @@ const cueList = [
     {cue: '果物 - ミ＿＿？'}
 ];
 
-const trialDuration = 5 * displayTime;
+const trialDuration = 10 * displayTime;
 
 const trial = {
     type: 'html-keyboard-japaneseTextInput',

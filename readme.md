@@ -78,8 +78,8 @@ const trial = {
 ```
 
 # デモ
-## ひらがな入力のデモ
+## ひらがな入力のデモ（例1）
 https://mklab-japan.github.io/japaneseTextInputForJsPsych/hiraganaDemo.html
 
-## カタカナ入力のデモ
+## カタカナ入力のデモ（例2）
 https://mklab-japan.github.io/japaneseTextInputForJsPsych/katakanaDemo.html

@@ -19,13 +19,12 @@ const cueList = [{
     }
 ];
 
-const trialDuration = 10 * displayTime;
+const trialDuration = 5 * displayTime;
 
 const trial = {
     type: 'html-keyboard-japaneseTextInput',
     inputSystem: 'hiragana',
-    prompt: '<p>以下にあてはまる単語を<span style ="text-decoration: underline">考え</span>，入力してください。' + '<br>' + String(trialDuration / 1000) + '秒経過すると自動的に次に進みます。</p>' +
-        '<p>同じ問題には同じ回答でかまいません。</p>',
+    prompt: '<p>以下にあてはまる単語を<span style ="text-decoration: underline">考え</span>，入力してください。</p>',
     stimulus: jsPsych.timelineVariable('cue'),
     trial_duration: trialDuration,
     enter_ends_trial: false,

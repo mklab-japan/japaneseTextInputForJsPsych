@@ -85,3 +85,6 @@ https://mklab-japan.github.io/japaneseTextInputForJsPsych/hiraganaDemo.html
 
 ## カタカナ入力のデモ（例2）
 https://mklab-japan.github.io/japaneseTextInputForJsPsych/katakanaDemo.html
+
+# 引用時の表記
+Masanori Kobayashi (2020). Japanese text input for jsPsych. doi: 10.5281/zenodo.3795182

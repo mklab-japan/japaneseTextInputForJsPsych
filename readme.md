@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/261358454.svg)](https://zenodo.org/badge/latestdoi/261358454)
+
 # Japanese Text Input For jsPsych
 キー入力時にローマ字入力変換を行い，ひらがなまたはカタカナを表示するjsPsych用プラグインです。    
 (lab.js版: https://github.com/mklab-japan/japaneseTextInputForLab.js)

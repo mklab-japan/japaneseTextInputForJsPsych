@@ -86,5 +86,5 @@ https://mklab-japan.github.io/japaneseTextInputForJsPsych/hiraganaDemo.html
 ## カタカナ入力のデモ（例2）
 https://mklab-japan.github.io/japaneseTextInputForJsPsych/katakanaDemo.html
 
-# 引用時の表記
-Masanori Kobayashi (2020). Japanese text input for jsPsych. doi: 10.5281/zenodo.3795182
+# このプラグインを利用した発表を行う際は以下の論文を引用してください
+小林正法　（印刷中）　再生テストに基づく記憶現象のオンライン実験による再現 心理学研究
